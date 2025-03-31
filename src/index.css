@@ -1,0 +1,151 @@
+/* General Page Styling */
+body {
+  background: linear-gradient(135deg, #1e1e2e, #25273c);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* To-Do List Container */
+.to-do-list {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input + Add Button in One Line */
+.input-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Circular Buttons - Add */
+.add-button {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  border: none;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button:hover {
+  background: #388e3c;
+}
+
+/* Task List */
+ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Task Items */
+li {
+  font-size: 1.2rem;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Task Text */
+.text {
+  flex: 1;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  gap: 6px;
+}
+
+/* Circular Buttons - Delete & Move */
+.delete-button,
+.move-button {
+  width: 38px;
+  height: 38px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Delete Button */
+.delete-button {
+  background: #e74c3c;
+}
+
+.delete-button:hover {
+  background: #c0392b;
+}
+
+/* Move Buttons */
+.move-button {
+  background: #3498db;
+}
+
+.move-button:hover {
+  background: #2980b9;
+}
